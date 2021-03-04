@@ -32,12 +32,18 @@ def create_layout(app):
                                     html.Br([]),
                                     html.P(
                                         "\
-                                            It’s hard to believe it’s already the end of February. \
+                                            It’s hard to believe it’s already the beginning of March. \
                                             I hope you and your families are healthy and staying warm in these \
                                             extremely cold temperatures we’re seeing across the US.  Spring will be here soon! \
                                             Have you ever thought about the Purpose of our team and how we enable Lumen’s overall Purpose? \
                                             \n\n \
-                                            Have you given much thought to how our team Makes Amazing Happen?  \
+                                            Have you given much thought to how our team Makes Amazing Happen?",
+                                        style={"color": "#ffffff"},
+                                        className="row",
+                                    ),
+                                    html.Br([]),
+                                    html.P(
+                                        "\
                                             By now, you all should have your 2021 goals created and reviewed with your Supervisor.  \
                                             You should see the daily results of your contributions \
                                             and understand the impact we, each one of us, have on our customers. \
@@ -314,6 +320,7 @@ def create_layout(app):
                                                         ],
                                                         style={"color": "#515151"},
                                                     ),
+                                                    html.Br([]),
                                                     html.P(
                                                         ["\
                                                         344 years.  That’s the combined years of Service for the WFA Forecast team,\
@@ -321,11 +328,18 @@ def create_layout(app):
                                                         Service Areas in Q.Field.  Although we are all working in different states, cities, \
                                                         buildings and some of us have been working from home since before it was trending,\
                                                         we have never been closer to each other. \
+                                                        "
+                                                        ],
+                                                        style={"color": "#7a7a7a"},
+                                                    ),
+                                                    html.Br([]),
+                                                    html.P(
+                                                        ["\
                                                         2020 brought on many challenges, not only for the world but for the creative minds. \
                                                         Forecasting, although all about numbers, is more about creativity and thinking outside \
                                                         the box than it is about making the day work.  We’ve had to think creatively when the world\
                                                         starting shutting down, How do we keep our current customers’ working, now from home,\
-                                                        \How do we add extra services for people who are starting to work from home, How do we\
+                                                        How do we add extra services for people who are starting to work from home, \"How do we\
                                                          keep our promises and continue to be number 1 to our customers.”  Those are questions\
                                                         that were consistently running through each of our minds, as we are losing hours for our \
                                                         technicians who needed to be elsewhere during the worse of all this.  We made it through,\
@@ -337,7 +351,6 @@ def create_layout(app):
                                                         ],
                                                         style={"color": "#7a7a7a"},
                                                     ),
-                                                    html.Br([]),
                                                 ],
                                                 className="nine columns",
                                             ),
@@ -709,15 +722,16 @@ def create_layout(app):
                                                     "r": 0,
                                                     "t": 20,
                                                     "b": 10,
-                                                    "l": 10,
+                                                    "l": 0,
                                                 },
                                                 showlegend=True,
-                                                title="Service Anniversaries",
-                                                width=650,
+                                                title="",
+                                                width=700,
                                                 xaxis={
                                                     "autorange": True,
                                                     "range": [-0.5, 4.5],
-                                                    "showline": True,
+                                                    "showline": True, 
+                                                    "tickangle": 45,                                                   
                                                     "title": "",
                                                     "type": "category",
                                                 },
