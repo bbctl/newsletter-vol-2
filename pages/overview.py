@@ -464,7 +464,7 @@ def create_layout(app):
                                                     html.Br([]),
                                                     html.P(
                                                         [
-                                                            "Directions"
+                                                            "Directions:"
                                                         ],
                                                         style={"color": "#7a7a7a"},
                                                     ),
