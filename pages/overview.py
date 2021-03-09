@@ -31,8 +31,7 @@ def create_layout(app):
                                     html.H5("Kim's Corner"),
                                     html.Br([]),
                                     html.P(
-                                        "\
-                                          It’s hard to believe it’s already the beginning of March. I hope you and your families are healthy and staying warm.  Remember to Spring forward for Daylight Savings Time on March 14th.  Have you ever thought about the Purpose of our team and how we enable Lumen’s overall Purpose? Have you given much thought to how our team Makes Amazing Happen?  By now, you all should have your 2021 goals created and reviewed with your Supervisor. You should see the daily results of your contributions and understand the impact we, each one of us, have on our customers. We are the Quarterbacks of this team. The field is aligned with us like never before. We will keep calling the right plays, execute with precision, and when we drop the ball, we’ll learn from mistakes to WIN together! I am confident we will deliver another year of amazing results!
+                                        "It’s hard to believe it’s already the beginning of March. I hope you and your families are healthy and staying warm.  Remember to Spring forward for Daylight Savings Time on March 14th.  Have you ever thought about the Purpose of our team and how we enable Lumen’s overall Purpose? Have you given much thought to how our team Makes Amazing Happen?  By now, you all should have your 2021 goals created and reviewed with your Supervisor. You should see the daily results of your contributions and understand the impact we, each one of us, have on our customers. We are the Quarterbacks of this team. The field is aligned with us like never before. We will keep calling the right plays, execute with precision, and when we drop the ball, we’ll learn from mistakes to WIN together! I am confident we will deliver another year of amazing results!",
                                         style={"color": "#ffffff"},
                                         className="row",
                                     ),
@@ -570,205 +569,82 @@ def create_layout(app):
                                     [
                                         html.Table(make_dash_table(df_fund_facts)),
                                     ],
+                                    
                                     className="six columns",
                                 ),
-                                html.Div(
-                                    [
-                                        dcc.Graph(
-                                        id="graph-1",
-                                        figure={
-                                            "data": [
-                                                go.Bar(
-                                                    x=[
-                                                        "Beth Tevah",
-                                                        "Shelby Webb",
-                                                        "Cynthia Beck",
-                                                        "Bonita Evans",
-                                                        "Melissa Coleman",
-                                                        "John Jackson",
-                                                        "Theresa Walker",
-                                                        "James Strickland",
-                                                        "Yvette Hinrickson",
-                                                        "Cary Crawford",
-                                                        "Daniel Hutson",
-                                                        "Matthew Miller",
-                                                        "Craig Horne",
-                                                    ],
-                                                    y=[
-                                                        "42",
-                                                        "14",
-                                                        "37",
-                                                        "9",
-                                                        "28",
-                                                        "6",
-                                                        "22",
-                                                        "6",
-                                                        "21",
-                                                        "5",
-                                                        "18",
-                                                    ],
-                                                    marker={
-                                                        "color": "#38C6F3",
-                                                        "line": {
-                                                            "color": "rgb(255, 255, 255)",
-                                                            "width": 2,
-                                                        },
-                                                    },
-                                                    name="January",
-                                                ),
-                                                go.Bar(
-                                                    x=[
-                                                        "Sara Ferwerda",
-                                                        "Trudy Madsen",
-                                                        "Gary Condry",
-                                                        "Jacob Roberts",
-                                                        "Thomas Granstrom",
-                                                        "Courtney Hester",
-                                                        "Brett Mcgovern",
-                                                        "Kenneth Coleman",
-                                                        "Patrick Lynch",
-                                                        "Harold Underwood",
-                                                    ],
-                                                    y=[
-                                                        "31",
-                                                        "6",
-                                                        "30",
-                                                        "6",
-                                                        "11",
-                                                        "1",
-                                                        "6",
-                                                        "1",
-                                                        "6",
-                                                        "1",
-                                                    ],
-                                                    marker={
-                                                        "color": "#0075C9",
-                                                        "line": {
-                                                            "color": "rgb(255, 255, 255)",
-                                                            "width": 2,
-                                                        },
-                                                    },
-                                                    name="February",
-                                                ),
-                                                go.Bar(
-                                                    x=[
-                                                        "Nola Immeker",
-                                                        "Jacquelynn Schippmann",
-                                                        "Nancy Fortney",
-                                                        "Bryce Armstrong",
-                                                        "Buffy Keahey",
-                                                        "Julie Faber",
-                                                        "Joshua Sorenson",
-                                                        "Victor Sican-Linares",
-                                                        "Mark Shealy",
-                                                        "Dawn Vollmer",
-                                                        "Traci Frazier",
-                                                        "Amy Arnold",
-                                                        "Michele Johnson",
-                                                        "Nicole Fry",
-                                                        "Nicole Ferguson",
-                                                        "Cortney Finley",
-                                                        "Christopher Mitchell",
-                                                        "Khairnisa Albatin",
-                                                    ],
-                                                    y=[
-                                                        "42",
-                                                        "6",
-                                                        "35",
-                                                        "6",
-                                                        "28",
-                                                        "6",
-                                                        "23",
-                                                        "6",
-                                                        "22",
-                                                        "6",
-                                                        "16",
-                                                        "6",
-                                                        "16",
-                                                        "6",
-                                                        "10",
-                                                        "4",
-                                                        "6",
-                                                        "4",
-                                                    ],
-                                                    marker={
-                                                        "color": "#FF9E18",
-                                                        "line": {
-                                                            "color": "rgb(255, 255, 255)",
-                                                            "width": 2,
-                                                        },
-                                                    },
-                                                    name="March",
-                                                ),
-                                            ],
-                                            "layout": go.Layout(
-                                                autosize=True,
-                                                bargap=0.20,
-                                                font={"family": "Raleway", "size": 12},
-                                                height=600,
-                                                hovermode="closest",
-                                                legend={
-                                                    "x": -0.0228945952895,
-                                                    "y": -0.189563896463,
-                                                    "orientation": "h",
-                                                    "yanchor": "top",
-                                                },
-                                                margin={
-                                                    "r": 0,
-                                                    "t": 20,
-                                                    "b": 10,
-                                                    "l": 0,
-                                                },
-                                                showlegend=True,
-                                                title="",
-                                                width=700,
-                                                xaxis={
-                                                    "autorange": True,
-                                                    "range": [-0.5, 4.5],
-                                                    "showline": True, 
-                                                    "tickangle": 45,                                                   
-                                                    "title": "",
-                                                    "type": "category",
-                                                },
-                                                yaxis={
-                                                    "autorange": True,
-                                                    "range": [0, 22.9789473684],
-                                                    "showgrid": True,
-                                                    "showline": True,
-                                                    "title": "",
-                                                    "type": "linear",
-                                                    "zeroline": False,
-                                                },
+                            
+                                            html.Div(
+                                                [
+                                                    html.Br([]),
+                                                    
+                                                ],
+                                                className="three columns right-aligned",
                                             ),
+                                        ],
+                                        className="row",
+                                        style={
+                                            "background-color": "#f9f9f9",
+                                            "padding-bottom": "30px",
                                         },
-                                        config={"displayModeBar": False},
                                     ),
+                                ],
+                                className="twelve columns",
+                        )
+                    ],
+                    className="row",
+                ),
+                # Row 4
+                    html.Div(
+                        [
+                            html.Div(
+                                [
+                                    html.Br([]),
+                                    html.Div(
+                                        [
+                                            html.H6([""], className="subtitle"),
+                                            html.Br([]),
+
+                                            html.Div(
+                                                [
+                                                    html.Br([]),
+                                                    html.Strong(
+                                                        ["Service Anniversaries"],
+                                                        style={"color": "#515151"},
+                                                    )
+                                                ],
+                                                className="three columns right-aligned",
+                                            ),
+                                            html.Div(
+                                    [
+                                        html.Table(make_dash_table(df_price_perf)),
                                     ],
+                                    
                                     className="six columns",
                                 ),
-                                                html.Div(
-                                                    [
-                                                        html.Br([]),
-                                                       
-                                                    ],
-                                                    className="three columns right-aligned",
-                                                ),
-                                            ],
-                                            className="row",
-                                            style={
-                                                "background-color": "#f9f9f9",
-                                                "padding-bottom": "30px",
-                                            },
-                                        ),
-                                    ],
-                                    className="twelve columns",
-                            )
-                        ],
-                        className="row",
-                    ),
-                ],
-                className="sub_page",
-            ),
-        ],
-        className="page",
-    )
+                            
+                                            html.Div(
+                                                [
+                                                    html.Br([]),
+                                                    
+                                                ],
+                                                className="three columns right-aligned",
+                                            ),
+                                        ],
+                                        className="row",
+                                        style={
+                                            "background-color": "#f9f9f9",
+                                            "padding-bottom": "30px",
+                                        },
+                                    ),
+                                ],
+                                className="twelve columns",
+                        )
+                    ],
+                    className="row",
+                ),
+            ],
+            className="sub_page",
+        ),
+    ],
+    className="page",
+)
