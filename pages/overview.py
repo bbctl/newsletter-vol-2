@@ -13,7 +13,7 @@ DATA_PATH = PATH.joinpath("../data").resolve()
 
 df_fund_facts = pd.read_csv(DATA_PATH.joinpath("df_fund_facts.csv"))
 df_price_perf = pd.read_csv(DATA_PATH.joinpath("df_price_perf.csv"))
-
+df_price_perf = df_price_perf.sort_values('Year')
 
 def create_layout(app):
     # Page layouts
@@ -608,7 +608,7 @@ def create_layout(app):
                                                 [
                                                     html.Br([]),
                                                     html.Strong(
-                                                        ["Service Anniversaries"],
+                                                        ["Q1 Service Anniversaries"],
                                                         style={"color": "#515151"},
                                                     )
                                                 ],
