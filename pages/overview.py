@@ -31,20 +31,14 @@ def create_layout(app):
                                     html.H5("Kim's Corner"),
                                     html.Br([]),
                                     html.P(
-                                        "It’s hard to believe it’s already the beginning of March. I hope you and your families are healthy and staying warm.  Remember to Spring forward for Daylight Savings Time on March 14th.  Have you ever thought about the Purpose of our team and how we enable Lumen’s overall Purpose? Have you given much thought to how our team Makes Amazing Happen?  By now, you all should have your 2021 goals created and reviewed with your Supervisor. You should see the daily results of your contributions and understand the impact we, each one of us, have on our customers. We are the Quarterbacks of this team. The field is aligned with us like never before. We will keep calling the right plays, execute with precision, and when we drop the ball, we’ll learn from mistakes to WIN together! I am confident we will deliver another year of amazing results!",
+                                        "It’s hard to believe it’s the middle of March already.  I hope you and your families are healthy and doing well.",
                                         style={"color": "#ffffff"},
                                         className="row",
                                     ),
                                     html.Br([]),
                                     html.P(
                                         "\
-                                            By now, you all should have your 2021 goals created and reviewed with your Supervisor.  \
-                                            You should see the daily results of your contributions \
-                                            and understand the impact we, each one of us, have on our customers. \
-                                            We are the Quarterbacks of this team.  The field is aligned with us like never before. \
-                                            We will keep calling the right plays, execute with precision, and when we drop the ball, \
-                                            we’ll learn from mistakes to WIN together! \
-                                            I am confident we will deliver another year of amazing results!",
+                                           Have you ever thought about the Purpose of our team and how we enable Lumen’s overall Purpose?  Have you given much thought to how our team “Makes Amazing Happen”?  By now, you all should have your 2021 goals created and reviewed with your Supervisor.  You should see the daily results of your contributions and understand the impact we, each one of us, have on our customers.  We are the Quarterbacks of this team.  The field is aligned with us like never before.  We will keep calling the right plays, execute with precision, and when we drop the ball, we’ll learn from mistakes to WIN together!  I am confident we will deliver another year of amazing results!",
                                         style={"color": "#ffffff"},
                                         className="row",
                                     ),
